@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+</head>
+<body>
+    <form action="image.html" method="post" novalidate>
+        <table border="2" align="center">
+            <tr>
+                <td colspan="2">
+                    <h1>Student Form</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter the name:</td>
+                <td>
+                    <input type="email" name="student_name" id="student_name"
+                    placeholder="Enter your name" autofocus="on" >
+                </td>
+            </tr>
+            <tr>
+                <td>Enter your choices:</td>
+                <td>
+                    <input type="checkbox" name="hobby_reading" id="hobby_reading"> Reading<br>
+                    <input type="checkbox" name="hobby_gaming" id="hobby_gaming"> Gaming<br>
+                    <input type="checkbox" name="hobby_sports" id="hobby_sports"> Sports<br>
+                    <input type="checkbox" name="hobby_music" id="hobby_music"> Music
+                </td>
+            </tr>
+            <tr>
+                <td>Enter your gender:</td>
+                <td>
+                    <input type="radio" name="gender" id="male" autocomplete="sex"> Male
+                    <input type="radio" name="gender" id="female" autocomplete="sex"> Female
+                </td>
+            </tr>
+            <tr>
+                <td>Enter your phone no:</td>
+                <td>
+                    <input type="tel" name="phone_number" id="phone_number" placeholder="Enter your contect no" >
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit" formaction="nav.html">Submit</button>
+                    <button type="reset">Reset</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

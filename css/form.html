@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: rgb(108, 237, 194);
+            border: 2px solid black;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form {
+            width: 350px;
+            padding: 25px;
+            background-color: rgb(156, 218, 236);
+            color: #2e5550;
+            border-radius: 15px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            font-size: 16px;
+        }
+
+        input[type="number"],
+        input[type="text"],
+        input[type="tel"] {
+            width: 100%;
+            padding: 8px 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        input[type="radio"] {
+            margin-left: 10px;
+            margin-right: 5px;
+            
+        }
+
+        .btn, .reset {
+            height: 35px;
+            width: 80px;
+            background-color: #444;
+            color: aliceblue;
+            border: none;
+            border-radius: 5px;
+        }
+        .btn {
+            margin-right: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <h1 style="color:yellow">Employee Info</h1>
+        <form action="" method="post">
+            Employee id:
+            <input type="number" placeholder="Enter employee id"><br>
+            
+            Employee name:
+            <input type="text" placeholder="Enter employee name"><br>
+            
+            Enter Gender:
+            <input type="radio" name="gender" value="female">Female
+            <input type="radio" name="gender" value="male">Male<br><br>
+            
+            Enter Phone no.:
+            <input type="tel" name="tel" placeholder="Enter phone no"><br>
+            
+            <input type="submit" class="btn" value="Submit">
+            <input type="reset" class="reset" value="Reset">
+        </form>
+    </div>
+</body>
+</html>

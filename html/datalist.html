@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bus Booking Form</title>
+</head>
+<body>
+
+    <h1>Bus Ticket Booking Form</h1>
+
+    <form action="submit.php" method="post">
+        <table border="1" cellpadding="10">
+            <tr>
+                <td><label for="name">Passenger Name:</label></td>
+                <td><input type="text" id="name" name="name" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="source">Source:</label></td>
+                <td>
+                    <input list="cities" id="source" name="source" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="destination">Destination:</label></td>
+                <td>
+                    <input list="cities" id="destination" name="destination" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="date">Travel Date:</label></td>
+                <td><input type="date" id="date" name="date" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="time">Travel Time:</label></td>
+                <td><input type="time" id="time" name="time"></td>
+            </tr>
+
+            <tr>
+                <td><label for="seats">Number of Tickets:</label></td>
+                <td><input type="number" id="seats" name="seats" min="1" max="10" required></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <button type="submit">Book Now</button>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Common datalist for source and destination -->
+        <datalist id="cities">
+            <option value="Ahmedabad">
+            <option value="Rajkot">
+            <option value="Surat">
+            <option value="Vadodara">
+            <option value="Bhavnagar">
+            <option value="Jamnagar">
+            <option value="Bharuch">
+            <option value="Mehsana">
+            <option value="Gandhinagar">
+            <option value="Navsari">
+        </datalist>
+    </form>
+
+</body>
+</html>
