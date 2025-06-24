@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menu {
+            display: flex;
+            flex-direction: row;
+
+            list-style-type: none;
+            justify-content: space-around;
+            background-color: antiquewhite;
+            padding: 20px;
+        }
+
+        /* unvisited link */
+
+        a:link,
+        a:visited {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            /* border-radius: 10px; */
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            text-decoration: none;
+            font-size: large;
+        }
+
+        a:hover {
+            background-color: brown;
+            text-transform: uppercase;
+            box-shadow: 5px 5px 5px gray;
+
+        }
+
+
+        a:active {
+            background-color: red;
+            color: yellow;
+        }
+
+        /* children of menu */
+        .menu>li {
+            width: 20%;
+            text-align: center;
+        }
+
+        /* 1st paragraph */
+        p:first-child {
+            border: 1px solid black;
+            color: white;
+            background-color: black;
+            padding: 10px;
+        }
+
+        p:last-child {
+            border: 1px solid black;
+            color: black;
+            background-color: pink;
+            padding: 10px;
+        }
+        p:nth-child(2)
+        {
+            background-color: blue;
+            color:white;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Psudo class</h1>
+    <ul class="menu">
+        <li><a href="demo.html">Home</a></li>
+        <li><a href="demo1.html">About us</a></li>
+        <li><a href="display_postion.html">Products</a></li>
+        <li><a href="flex_1.html">Services</a></li>
+        <li><a href="form.html">Contact us</a></li>
+    </ul>
+    <div>
+        <p>
+            <b>First Paragrpah</b> <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere placeat distinctio non error quia esse dicta
+            voluptates eos et ea doloremque ipsum, soluta nemo accusamus dolor rem alias recusandae aperiam
+            necessitatibus, animi velit a ratione vitae. Quod qui debitis, consequatur consectetur culpa suscipit ab
+            inventore natus blanditiis provident eligendi in magnam nihil deleniti cumque ut commodi aut quas rem. Eum
+            facere doloremque veritatis officia hic consectetur consequatur dignissimos neque, mollitia veniam harum
+            ipsam? Similique, a! Quidem vero reprehenderit qui architecto laudantium voluptates perspiciatis neque est!
+            Dolor, aperiam! Qui vitae velit repellendus, soluta accusantium aperiam sunt possimus! Ut fugit ratione
+            sint.
+        </p>
+        <p>
+            <b>second Paragrpah</b> <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere placeat distinctio non error quia esse dicta
+            voluptates eos et ea doloremque ipsum, soluta nemo accusamus dolor rem alias recusandae aperiam
+            necessitatibus, animi velit a ratione vitae. Quod qui debitis, consequatur consectetur culpa suscipit ab
+            inventore natus blanditiis provident eligendi in magnam nihil deleniti cumque ut commodi aut quas rem. Eum
+            facere doloremque veritatis officia hic consectetur consequatur dignissimos neque, mollitia veniam harum
+            ipsam? Similique, a! Quidem vero reprehenderit qui architecto laudantium voluptates perspiciatis neque est!
+            Dolor, aperiam! Qui vitae velit repellendus, soluta accusantium aperiam sunt possimus! Ut fugit ratione
+            sint.
+        </p>
+        <p>
+            <b>Third Paragrpah</b> <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere placeat distinctio non error quia esse dicta
+            voluptates eos et ea doloremque ipsum, soluta nemo accusamus dolor rem alias recusandae aperiam
+            necessitatibus, animi velit a ratione vitae. Quod qui debitis, consequatur consectetur culpa suscipit ab
+            inventore natus blanditiis provident eligendi in magnam nihil deleniti cumque ut commodi aut quas rem. Eum
+            facere doloremque veritatis officia hic consectetur consequatur dignissimos neque, mollitia veniam harum
+            ipsam? Similique, a! Quidem vero reprehenderit qui architecto laudantium voluptates perspiciatis neque est!
+            Dolor, aperiam! Qui vitae velit repellendus, soluta accusantium aperiam sunt possimus! Ut fugit ratione
+            sint.
+        </p>
+    </div>
+</body>
+
+</html>
