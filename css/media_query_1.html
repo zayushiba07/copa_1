@@ -10,106 +10,244 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
         /* all tags */
-        
-        *
-        {
+
+        * {
             margin: 0px;
-            padding:0px;
+            padding: 0px;
             letter-spacing: 1px;
+            box-sizing: border-box;
+            font-family: "PT Sans", sans-serif;
+
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px;
+        }
+
+        section>article {
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+
+        h2 {
+            font-family: "Merriweather", serif
         }
 
         /*  ##Device = Most of the Smartphones Mobiles (Portrait) ##Screen = B/w 320px to 479px */
         @media (min-width: 320px) and (max-width: 480px) {
+
             /* code in this block will be applied only if device width>320 and <480 */
-            body
-            {
+            body {
                 background-color: black;
-                color:white;
+                color: white;
+            }
+
+            section>article {
+                width: 100%;
+                border: 1px solid white;
+            }
+
+            section>article>p {
+                font-size: 22px;
+            }
+
+            section>article>header>h2 {
+                font-size: 30px;
             }
         }
 
         /* ##Device = Low Resolution Tablets,  ##Screen = B/w 481px to 767px */
         @media (min-width: 481px) and (max-width: 767px) {
+
             /* code in this block will be applied only if device width>481 and <767 */
-            body 
-            {
+            body {
                 background-color: red;
                 color: yellow;
+            }
+
+            section>article {
+                width: 50%;
+                border: 1px solid white;
+            }
+
+            section>article>p {
+                font-size: 20px;
+                text-align: justify;
+            }
+
+            section>article>header>h2 {
+                font-size: 26px;
             }
         }
 
         /* ##Device = Tablets, Ipads (portrait) ##Screen = B/w 768px to 1024px */
         @media (min-width: 768px) and (max-width: 1024px) {
+
             /* code in this block will be applied only if device width>768 and <1024 */
-            body 
-            {
+            body {
                 background-color: blue;
-                color:white;
+                color: white;
+            }
+
+            section>article {
+                width: 33.33%;
+                border: 1px solid white;
+            }
+
+            section>article>p {
+                font-size: 18px;
+                text-align: justify;
+            }
+
+            section>article>header>h2 {
+                font-size: 24px;
             }
         }
 
         /* ##Device = Laptops, Desktops ##Screen = B/w 1025px to 1280px*/
         @media (min-width: 1025px) and (max-width: 1280px) {
+
             /* code in this block will be applied only if device width>1025 and <1280 */
-             body 
-            {
+            body {
                 background-color: green;
-                color:black;
+                color: black;
+            }
+
+            section>article {
+                width: 25%;
+                border: 1px solid white;
+            }
+
+            section>article>p {
+                font-size: 17px;
+                text-align: justify;
+            }
+
+            section>article>header>h2 {
+                font-size: 22px;
             }
         }
 
         /* ##Device = Desktops ##Screen = 1281px to higher resolution desktop */
         @media (min-width: 1281px) {
+
             /* code in this block will be applied only if device width>1281 */
-             body 
-            {
+            body {
                 background-color: pink;
-                color:black;
+                color: black;
+            }
+
+            section>article {
+                width: 20%;
+                border: 1px solid white;
+            }
+
+            section>article>p {
+                font-size: 17px;
+                text-align: justify;
+            }
+
+            section>article>header>h2 {
+                font-size: 22px;
             }
         }
     </style>
 </head>
+
 <body>
     <section>
         <article>
             <header>
                 <h2>Article Heading 1</h2>
             </header>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa perspiciatis, eligendi quisquam deleniti voluptatum ipsum distinctio, hic rem quaerat dolorem asperiores magnam natus perferendis nisi sequi! Veniam ratione laborum facere sapiente, dicta soluta est eaque saepe officiis quasi deserunt nisi reprehenderit quod odio quibusdam fuga quam autem amet doloribus rem assumenda! Voluptates vero in itaque iusto, harum quos sapiente minima labore fugit aperiam, ipsam nemo consequatur vel optio magni, doloribus rem! Nemo hic sint officiis tenetur cupiditate iusto in molestiae recusandae adipisci, enim culpa dolorem suscipit a accusamus dignissimos obcaecati nam eos! Autem libero expedita reiciendis id possimus quas placeat!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ratione dolorem vel maiores atque, odio tenetur facilis modi explicabo aliquid enim provident sunt sequi quo et ad qui voluptatum officia voluptas cum officiis a pariatur mollitia? Asperiores officiis saepe cum corporis, eum hic. Laboriosam ab fugiat nobis aperiam asperiores quia?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa perspiciatis, eligendi quisquam deleniti
+                voluptatum ipsum distinctio, hic rem quaerat dolorem asperiores magnam natus perferendis nisi sequi!
+                Veniam ratione laborum facere sapiente, dicta soluta est eaque saepe officiis quasi deserunt nisi
+                reprehenderit quod odio quibusdam fuga quam autem amet doloribus rem assumenda! Voluptates vero in
+                itaque iusto, harum quos sapiente minima labore fugit aperiam, ipsam nemo consequatur vel optio magni,
+                doloribus rem! Nemo hic sint officiis tenetur cupiditate iusto in molestiae recusandae adipisci, enim
+                culpa dolorem suscipit a accusamus dignissimos obcaecati nam eos! Autem libero expedita reiciendis id
+                possimus quas placeat!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ratione dolorem vel maiores atque, odio
+                tenetur facilis modi explicabo aliquid enim provident sunt sequi quo et ad qui voluptatum officia
+                voluptas cum officiis a pariatur mollitia? Asperiores officiis saepe cum corporis, eum hic. Laboriosam
+                ab fugiat nobis aperiam asperiores quia?</p>
             <footer>Author :- Ankit Patel </footer>
         </article>
-          <article>
+        <article>
             <header>
                 <h2>Article Heading 2</h2>
             </header>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa perspiciatis, eligendi quisquam deleniti voluptatum ipsum distinctio, hic rem quaerat dolorem asperiores magnam natus perferendis nisi sequi! Veniam ratione laborum facere sapiente, dicta soluta est eaque saepe officiis quasi deserunt nisi reprehenderit quod odio quibusdam fuga quam autem amet doloribus rem assumenda! Voluptates vero in itaque iusto, harum quos sapiente minima labore fugit aperiam, ipsam nemo consequatur vel optio magni, doloribus rem! Nemo hic sint officiis tenetur cupiditate iusto in molestiae recusandae adipisci, enim culpa dolorem suscipit a accusamus dignissimos obcaecati nam eos! Autem libero expedita reiciendis id possimus quas placeat!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ratione dolorem vel maiores atque, odio tenetur facilis modi explicabo aliquid enim provident sunt sequi quo et ad qui voluptatum officia voluptas cum officiis a pariatur mollitia? Asperiores officiis saepe cum corporis, eum hic. Laboriosam ab fugiat nobis aperiam asperiores quia?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa perspiciatis, eligendi quisquam deleniti
+                voluptatum ipsum distinctio, hic rem quaerat dolorem asperiores magnam natus perferendis nisi sequi!
+                Veniam ratione laborum facere sapiente, dicta soluta est eaque saepe officiis quasi deserunt nisi
+                reprehenderit quod odio quibusdam fuga quam autem amet doloribus rem assumenda! Voluptates vero in
+                itaque iusto, harum quos sapiente minima labore fugit aperiam, ipsam nemo consequatur vel optio magni,
+                doloribus rem! Nemo hic sint officiis tenetur cupiditate iusto in molestiae recusandae adipisci, enim
+                culpa dolorem suscipit a accusamus dignissimos obcaecati nam eos! Autem libero expedita reiciendis id
+                possimus quas placeat!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ratione dolorem vel maiores atque, odio
+                tenetur facilis modi explicabo aliquid enim provident sunt sequi quo et ad qui voluptatum officia
+                voluptas cum officiis a pariatur mollitia? Asperiores officiis saepe cum corporis, eum hic. Laboriosam
+                ab fugiat nobis aperiam asperiores quia?</p>
             <footer>Author :- Ankit Patel </footer>
         </article>
-          <article>
+        <article>
             <header>
                 <h2>Article Heading 3</h2>
             </header>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa perspiciatis, eligendi quisquam deleniti voluptatum ipsum distinctio, hic rem quaerat dolorem asperiores magnam natus perferendis nisi sequi! Veniam ratione laborum facere sapiente, dicta soluta est eaque saepe officiis quasi deserunt nisi reprehenderit quod odio quibusdam fuga quam autem amet doloribus rem assumenda! Voluptates vero in itaque iusto, harum quos sapiente minima labore fugit aperiam, ipsam nemo consequatur vel optio magni, doloribus rem! Nemo hic sint officiis tenetur cupiditate iusto in molestiae recusandae adipisci, enim culpa dolorem suscipit a accusamus dignissimos obcaecati nam eos! Autem libero expedita reiciendis id possimus quas placeat!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ratione dolorem vel maiores atque, odio tenetur facilis modi explicabo aliquid enim provident sunt sequi quo et ad qui voluptatum officia voluptas cum officiis a pariatur mollitia? Asperiores officiis saepe cum corporis, eum hic. Laboriosam ab fugiat nobis aperiam asperiores quia?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa perspiciatis, eligendi quisquam deleniti
+                voluptatum ipsum distinctio, hic rem quaerat dolorem asperiores magnam natus perferendis nisi sequi!
+                Veniam ratione laborum facere sapiente, dicta soluta est eaque saepe officiis quasi deserunt nisi
+                reprehenderit quod odio quibusdam fuga quam autem amet doloribus rem assumenda! Voluptates vero in
+                itaque iusto, harum quos sapiente minima labore fugit aperiam, ipsam nemo consequatur vel optio magni,
+                doloribus rem! Nemo hic sint officiis tenetur cupiditate iusto in molestiae recusandae adipisci, enim
+                culpa dolorem suscipit a accusamus dignissimos obcaecati nam eos! Autem libero expedita reiciendis id
+                possimus quas placeat!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ratione dolorem vel maiores atque, odio
+                tenetur facilis modi explicabo aliquid enim provident sunt sequi quo et ad qui voluptatum officia
+                voluptas cum officiis a pariatur mollitia? Asperiores officiis saepe cum corporis, eum hic. Laboriosam
+                ab fugiat nobis aperiam asperiores quia?</p>
             <footer>Author :- Ankit Patel </footer>
         </article>
-          <article>
+        <article>
             <header>
                 <h2>Article Heading 4</h2>
             </header>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa perspiciatis, eligendi quisquam deleniti voluptatum ipsum distinctio, hic rem quaerat dolorem asperiores magnam natus perferendis nisi sequi! Veniam ratione laborum facere sapiente, dicta soluta est eaque saepe officiis quasi deserunt nisi reprehenderit quod odio quibusdam fuga quam autem amet doloribus rem assumenda! Voluptates vero in itaque iusto, harum quos sapiente minima labore fugit aperiam, ipsam nemo consequatur vel optio magni, doloribus rem! Nemo hic sint officiis tenetur cupiditate iusto in molestiae recusandae adipisci, enim culpa dolorem suscipit a accusamus dignissimos obcaecati nam eos! Autem libero expedita reiciendis id possimus quas placeat!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ratione dolorem vel maiores atque, odio tenetur facilis modi explicabo aliquid enim provident sunt sequi quo et ad qui voluptatum officia voluptas cum officiis a pariatur mollitia? Asperiores officiis saepe cum corporis, eum hic. Laboriosam ab fugiat nobis aperiam asperiores quia?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa perspiciatis, eligendi quisquam deleniti
+                voluptatum ipsum distinctio, hic rem quaerat dolorem asperiores magnam natus perferendis nisi sequi!
+                Veniam ratione laborum facere sapiente, dicta soluta est eaque saepe officiis quasi deserunt nisi
+                reprehenderit quod odio quibusdam fuga quam autem amet doloribus rem assumenda! Voluptates vero in
+                itaque iusto, harum quos sapiente minima labore fugit aperiam, ipsam nemo consequatur vel optio magni,
+                doloribus rem! Nemo hic sint officiis tenetur cupiditate iusto in molestiae recusandae adipisci, enim
+                culpa dolorem suscipit a accusamus dignissimos obcaecati nam eos! Autem libero expedita reiciendis id
+                possimus quas placeat!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ratione dolorem vel maiores atque, odio
+                tenetur facilis modi explicabo aliquid enim provident sunt sequi quo et ad qui voluptatum officia
+                voluptas cum officiis a pariatur mollitia? Asperiores officiis saepe cum corporis, eum hic. Laboriosam
+                ab fugiat nobis aperiam asperiores quia?</p>
             <footer>Author :- Ankit Patel </footer>
         </article>
-          <article>
+        <article>
             <header>
                 <h2>Article Heading 5</h2>
             </header>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa perspiciatis, eligendi quisquam deleniti voluptatum ipsum distinctio, hic rem quaerat dolorem asperiores magnam natus perferendis nisi sequi! Veniam ratione laborum facere sapiente, dicta soluta est eaque saepe officiis quasi deserunt nisi reprehenderit quod odio quibusdam fuga quam autem amet doloribus rem assumenda! Voluptates vero in itaque iusto, harum quos sapiente minima labore fugit aperiam, ipsam nemo consequatur vel optio magni, doloribus rem! Nemo hic sint officiis tenetur cupiditate iusto in molestiae recusandae adipisci, enim culpa dolorem suscipit a accusamus dignissimos obcaecati nam eos! Autem libero expedita reiciendis id possimus quas placeat!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ratione dolorem vel maiores atque, odio tenetur facilis modi explicabo aliquid enim provident sunt sequi quo et ad qui voluptatum officia voluptas cum officiis a pariatur mollitia? Asperiores officiis saepe cum corporis, eum hic. Laboriosam ab fugiat nobis aperiam asperiores quia?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa perspiciatis, eligendi quisquam deleniti
+                voluptatum ipsum distinctio, hic rem quaerat dolorem asperiores magnam natus perferendis nisi sequi!
+                Veniam ratione laborum facere sapiente, dicta soluta est eaque saepe officiis quasi deserunt nisi
+                reprehenderit quod odio quibusdam fuga quam autem amet doloribus rem assumenda! Voluptates vero in
+                itaque iusto, harum quos sapiente minima labore fugit aperiam, ipsam nemo consequatur vel optio magni,
+                doloribus rem! Nemo hic sint officiis tenetur cupiditate iusto in molestiae recusandae adipisci, enim
+                culpa dolorem suscipit a accusamus dignissimos obcaecati nam eos! Autem libero expedita reiciendis id
+                possimus quas placeat!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ratione dolorem vel maiores atque, odio
+                tenetur facilis modi explicabo aliquid enim provident sunt sequi quo et ad qui voluptatum officia
+                voluptas cum officiis a pariatur mollitia? Asperiores officiis saepe cum corporis, eum hic. Laboriosam
+                ab fugiat nobis aperiam asperiores quia?</p>
             <footer>Author :- Ankit Patel </footer>
         </article>
     </section>
