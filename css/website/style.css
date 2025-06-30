@@ -1,0 +1,44 @@
+*
+{
+    margin: 0px;
+    padding:0px;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+}
+body 
+{
+    background-color: #F1F1F2;
+}
+
+#header 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1995AD;
+}
+#header>div 
+{
+    width:400px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#header>ul 
+{
+    display: flex;
+    list-style-type: none;
+}
+#header>ul>li>a:link, #header>ul>li>a:visited
+{
+    text-decoration: none;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-right: 20px;
+    text-transform: uppercase;
+    color:black;
+    background-color:  #A1D6E2;
+    
+}
